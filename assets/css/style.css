@@ -1,0 +1,85 @@
+@import "./colores.css";
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contenedor-index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100svh;
+    
+}
+
+.index-etiquetas{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.index-etiquetas:nth-child(1) {
+    background-color: var(--bg-color-azul)
+}
+
+.index-etiquetas:nth-child(2) {
+    background-color: var(--bg-color-verde); 
+}
+
+.index-etiquetas:nth-child(3) {
+    background-color: var(--bg-color-rojo);
+}
+
+.index-etiquetas:nth-child(4) {
+    background-color: var(--bg-color-amarillo);
+}
+
+.index-etiquetas:nth-child(5) {
+    background-color: var(--color-fuente);
+}
+
+/* PAGINA CLIENTES */
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: var(--color-fuente);
+    }
+}
+.contenedor-pagina-funciones {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside secction secction";
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: .5fr 4fr;
+    
+}
+.contenedor-header {
+     grid-area: header;
+     background: var(--bg-color-azul); 
+}
+.contenedor-aside { 
+    grid-area: aside; 
+    background: var(--bg-color-rojo); 
+}
+.contenedor-secction { 
+    grid-area: secction; 
+    background: var(--bg-color-verde);
+}
