@@ -1,0 +1,113 @@
+/*********** BOTONES DEL ASIDE  *********/
+
+.boton-aside {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.boton-aside-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-aside-imagen {
+    display: block;
+    width: 99%; /* Ancho de la imagen */
+    border-radius: 10px;
+    height: auto; /* Altura automática según la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.boton-aside-texto {
+    display: block;
+    font-size: var(--fn-tamaño-gigante); /* Tamaño del texto */
+}
+
+/***** LOS FORMULARIOS   ******/
+
+.formulario {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    background-color: var(--bg-color-azul);
+}
+
+.formulario-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+/****  Imputs con el texto sobre al imput  ***/
+.formulario-grupo {
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.formulario-etiqueta {
+    display: block;
+    font-weight: bold;
+}
+
+.formulario-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/****  Imputs con el texto sobrepuesto al imput  ***/
+.formulario-grupo1 {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.formulario-etiqueta1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.formulario-input1 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+
+}
+
+.formulario-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*********  ESTILO DE LOS BOTONES    **********/
+.formulario-botones {
+    text-align: center;
+}
+
+.botones {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: var(--fn-tamaño-gigante);
+    cursor: pointer;
+}

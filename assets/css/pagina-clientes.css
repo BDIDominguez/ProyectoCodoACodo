@@ -1,0 +1,31 @@
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: var(--color-fuente);
+    }
+}
+.contenedor-pagina-funciones {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside secction secction";
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 10% 4fr;
+    
+}
+.contenedor-header {
+     grid-area: header;
+     background: var(--bg-color-azul); 
+}
+.contenedor-aside { 
+    grid-area: aside; 
+    background: var(--bg-color-rojo); 
+}
+.contenedor-secction { 
+    grid-area: secction; 
+    background: var(--bg-color-verde);
+}
