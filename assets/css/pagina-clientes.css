@@ -1,13 +1,5 @@
 
-.contenedor-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    a {
-        text-decoration: none;
-        color: var(--color-fuente);
-    }
-}
+
 .contenedor-pagina-funciones {
     display: grid;
     grid-template-areas: 

@@ -17,3 +17,22 @@
 .formulario:target {
     display: block;
 }
+
+.efecto-escala:hover{
+    transform: scale(1.1);
+
+}
+.efecto-escala-gigante:hover{
+    transform: scale(1.2);
+
+}
+
+.efecto-fondo:hover{
+    border-radius: 20px;
+    background-color: var(--bg-color-verde);
+    
+}
+
+.efecto-sombreado:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+}

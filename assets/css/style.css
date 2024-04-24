@@ -3,6 +3,7 @@
 @import "./custom.css";
 @import "./animaciones.css";
 @import "./pagina-index.css";
+@import "./header.css";
 @import "./pagina-clientes.css";
 
 body, html{

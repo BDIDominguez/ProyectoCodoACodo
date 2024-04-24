@@ -111,3 +111,40 @@
     font-size: var(--fn-tamaño-gigante);
     cursor: pointer;
 }
+
+/********* ESTILO DE LAS TABLAS  ***********/
+
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    height: 400px; /* Altura máxima de la tabla */
+    overflow-y: auto; /* Habilita el scrollbar vertical si es necesario */
+    border-radius: 20px ;
+    border: 1px solid black;
+    background-color: var(--bg-color-amarillo);
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: separate;
+    font-size: var(--fn-tamaño-gigante);
+    
+}
+
+.tabla-fila {
+    text-align: center;
+    
+    
+}
+
+
+.tabla-fila.seleccionada {
+    background-color: #f0f0f0; /* Cambiar el color de fondo de la fila seleccionada */
+}
+
+.centrar-elemento {
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Opcional: establece la altura del contenedor al alto de la ventana */
+}
