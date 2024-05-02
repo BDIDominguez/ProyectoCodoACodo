@@ -16,7 +16,10 @@
 .contenedor-aside { 
     grid-area: aside; 
     background: var(--bg-color-rojo); 
+    
+       
 }
+
 .contenedor-secction { 
     grid-area: secction; 
     background: var(--bg-color-verde);

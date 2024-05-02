@@ -16,4 +16,32 @@ body, html{
 
 
 
+/* Estilos para pantallas grandes (PC de escritorio) */
+@media only screen and (min-width: 1025px) {
+    
+}
 
+/* Estilos para tablet (entre 600px y 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    
+}
+
+/* Estilos para celulares (menos de 600px) */
+@media only screen and (max-width: 599px) {
+    
+}
+
+
+/*  Comandos para ventana flotante  */
+.flotante {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    cursor: move;
+  }
+
+  .contenedor-comandos-botones {
+    background-color: gray;
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/productos.css">
+    <title>Document</title>
+</head>
+
+<body> 
+    <!-- Seccion Navegador  -->
+    <div class="contenedor-navegador">
+        <header class="contenedor-header">
+            Navegador - links
+        </header>   
+        <div class="navegador-marcador">
+            <button class="boton-navegacion" type="button" onclick="togglePanel('contenedor-header')">VVVV</button>
+        </div>
+    </div> 
+    <!-- Seccion Cuerpo de la pagina -->
+    <aside class="contenedor-cuerpo">
+        <div class="cuerpo-botones">
+            <h4 class="estilo-titulos">Boton Aside</h4>
+        </div>
+        <div class="cuerpo-marcador">
+            <button class="boton-navegacion1" type="button" onclick="togglePanel('cuerpo-botones')">VVVV</button>
+        </div>
+        <div class="cuerpo-datos">
+            <h4 class="estilo-titulos">Contenedor de Datos</h4>
+        </div>
+    </aside> 
+    <!-- Boton Flotantes   -->
+    <button class="boton-flotante" type="button" onclick="togglePanel('contenedor-header')">Flotante</button>
+    <!-- Boton Flotantes  JS -->
+    <button onclick="crearBotonHeader()"></button>
+    <!-- Script de JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

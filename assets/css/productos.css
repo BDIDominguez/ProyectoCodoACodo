@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/****  BARRA SUPERIOR  *****/
+
+.contenedor-navegador {
+    position: relative  ;
+    background-color: gray;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    
+       
+}
+
+.navegador-marcador {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: blue;
+    display: none;
+    
+
+}
+
+/****  CONTENEDOR DE BARRA INFERIOR  *****/
+
+.contenedor-cuerpo {
+    height: 100%;
+    display: flex;
+    
+   
+}
+
+
+/***  BARRA LATERAL    *****/
+
+.cuerpo-botones {
+    background-color: blueviolet;
+    width: 13%;
+    
+}
+
+.cuerpo-marcador {
+    width: auto;
+    background-color: green;
+    
+
+}
+
+
+/****  DATOS DE LA PAGINA  *****/
+.cuerpo-datos {
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+
+
+/****  ESTILOS   *****/ 
+
+.estilo-titulos {
+    padding: 0;
+    margin: 0;
+
+}
+
+.boton-navegacion {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    transform: rotate(180deg); 
+
+}
+
+.boton-navegacion1 {
+    height: auto;
+    text-align: center;
+    line-height: 10px;
+    padding: 0;
+    margin: 0;
+    writing-mode: vertical-lr;
+    
+}
+
+/***  Boton Flotante  ***/
+
+.boton-flotante {
+    position: fixed;
+    width: auto;
+    top: 15px;
+    left: 70%;
+
+    
+}

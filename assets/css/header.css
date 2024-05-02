@@ -1,19 +1,36 @@
-.contenedor-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-     a {
-        text-decoration: none;
-        color: var(--color-fuente-negro);
-        padding: 10px;
-        transition: background-color 0.2s ease, box-shadow 0.2s ease;
-        border-radius: 20px;
+/* Estilos para pantallas grandes (PC de escritorio) */
+@media only screen and (min-width: 1025px) {
+    .contenedor-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         a {
+            text-decoration: none;
+            color: var(--color-fuente-negro);
+            padding: 30px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 20px;
+        }
+        font-size: var(--fn-tamaño-XL);
+        font-weight: bold;
+        
     }
-    font-size: var(--fn-tamaño-XL);
-    font-weight: bold;
+    
+    .contenedor-index {
+        width: 90%;
+    }
+
+     
+    
+}
+/* Estilos para tablet (entre 600px y 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     
 }
 
-.contenedor-index {
-    width: 90%;
+/* Estilos para celulares (menos de 600px) */
+@media only screen and (max-width: 599px) {
+    
 }
+
+

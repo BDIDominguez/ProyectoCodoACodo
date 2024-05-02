@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+.pagina-header{
+    text-align: center;
+    background-color: aquamarine;
+    
+}
+
+.pagina-contenedor{
+    display: flex;
+    
+}
+
+.pagina-cuerpo-botones {
+    text-align: center;
+    width: 25%;
+    background-color: blueviolet;
+    
+}
+
+.pagina-cuerpo-datos{
+    text-align: center;
+    width: 100%;
+    background-color: aqua;
+    align-content: center;
+    
+}
+
+/****  DISPOSICION DEL HEADER  ****/
+.pagina-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*****  PARA BORRAR   *******/
+.contenedor-header-imagen {
+    background-color: red;
+    width: 8%;
+    
+}
+.contenedor-header-accesos {
+    background-color: purple;
+    width: 100%;
+}
+
+
+/*****   CONFIGURACION DEL LA IMAGEN DEL HEADER    ****/
+
+.contenedor-header-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*****   CONFIGURACION DEL LOS BOTONES DEL HEADER    ****/
+
+.header-boton {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    img {
+        width: 100px;
+        border-radius: 5px;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+        
+        transition: opacity 0.3s ease-in-out;
+
+    }
+}
+
