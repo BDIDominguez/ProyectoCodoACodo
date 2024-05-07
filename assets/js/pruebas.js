@@ -1,8 +1,8 @@
 // BOTON OCULTADOR HEADER Y SU ACCION
 function crearBotonHeader(){
-    var objetivo = document.querySelector('.pagina-header');
-    var altura = objetivo.offsetHeight;
-    var boton = document.createElement("button");
+    let objetivo = document.querySelector('.pagina-header');
+    let altura = objetivo.offsetHeight;
+    let boton = document.createElement("button");
     boton.textContent = "VVVV";
     boton.style.transform = "rotate(180deg)";
     boton.className = "boton-generado-header";
@@ -15,12 +15,12 @@ function crearBotonHeader(){
     document.body.appendChild(boton);
 }
 function ocultarHeader() {
-    var btnFlotanteHeader = document.querySelector('.boton-generado-header');
-    var objetivo = document.querySelector('.pagina-header');
-    var alturaContenedorNav = objetivo.offsetHeight;
+    let btnFlotanteHeader = document.querySelector('.boton-generado-header');
+    let objetivo = document.querySelector('.pagina-header');
+    let alturaContenedorNav = objetivo.offsetHeight;
     if (objetivo.style.display === 'none') {
         objetivo.style.display = 'block';
-        var alturaContenedorNav = objetivo.offsetHeight;
+        let alturaContenedorNav = objetivo.offsetHeight;
         btnFlotanteHeader.style.top = parseInt(alturaContenedorNav) + 'px';
         btnFlotanteHeader.style.transform = "rotate(180deg)";
     } else {
@@ -34,9 +34,9 @@ function ocultarHeader() {
 
 // BOTON OCULTADOR LATERAL Y SU ACCION
 function crearBotonLateral(){
-    var objetivo = document.querySelector('.pagina-cuerpo-botones');
-    var altura = objetivo.offsetWidth;
-    var boton = document.createElement("button");
+    let objetivo = document.querySelector('.pagina-cuerpo-botones');
+    let altura = objetivo.offsetWidth;
+    let boton = document.createElement("button");
     boton.textContent = "VVVV";
     boton.style.transform = "rotate(90deg)";
     boton.className = "boton-generado-lateral";
@@ -49,12 +49,12 @@ function crearBotonLateral(){
     document.body.appendChild(boton);
 }
 function ocultarLateral() {
-    var btnFlotanteHeader = document.querySelector('.boton-generado-lateral');
-    var objetivo = document.querySelector('.pagina-cuerpo-botones');
-    var alturaContenedorNav = objetivo.offsetWidth;
+    let btnFlotanteHeader = document.querySelector('.boton-generado-lateral');
+    let objetivo = document.querySelector('.pagina-cuerpo-botones');
+    let alturaContenedorNav = objetivo.offsetWidth;
     if (objetivo.style.display === 'none') {
         objetivo.style.display = 'block';
-        var alturaContenedorNav = objetivo.offsetWidth;
+        let alturaContenedorNav = objetivo.offsetWidth;
         btnFlotanteHeader.style.left = parseInt(alturaContenedorNav) -16 + 'px';
         btnFlotanteHeader.style.transform = "rotate(90deg)";
     } else {
@@ -74,25 +74,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // FUNCION PARA ACOMODAR LA POSICION DEL BOTON CUANDO SE REDIMENDIONE LA VENTA
 function ajustarBotonesGenerados(){
-    var btnLateral = document.querySelector('.boton-generado-lateral');
-    var btnHeader = document.querySelector('.boton-generado-header');
-    var header = document.querySelector('.pagina-header');
-    var lateral = document.querySelector('.pagina-cuerpo-botones');
+    let btnLateral = document.querySelector('.boton-generado-lateral');
+    let btnHeader = document.querySelector('.boton-generado-header');
+    let header = document.querySelector('.pagina-header');
+    let lateral = document.querySelector('.pagina-cuerpo-botones');
 
-    var realHeader = header.getBoundingClientRect();
-    var realLateral = lateral.getBoundingClientRect();
+    let realHeader = header.getBoundingClientRect();
+    let realLateral = lateral.getBoundingClientRect();
 
     if (header.style.display === 'none'){
         btnHeader.style.top = '0px';
     }else{
-        //var altura = header.style.offsetHeight;
+        //let altura = header.style.offsetHeight;
         //btnHeader.style.top = parseInt(altura) + 'px';
         btnHeader.style.top = (realHeader.top + realHeader.height) + 'px';
     }
     if (lateral.style.display === 'none'){
         btnLateral.style.left = '0px';
     }else{
-        //var distancia = lateral.style.offsetWidth;
+        //let distancia = lateral.style.offsetWidth;
         //btnLateral.style.left = parseInt(distancia) + 'px';
         btnLateral.style.left = (realLateral.left + realLateral.width) - 15 + 'px';
     }
@@ -103,13 +103,13 @@ window.addEventListener('resize',ajustarBotonesGenerados);
 
 // CAMBIAR LAS PROPIEDADES PAGINA-CONTENEDOR PARA QUE SE USE TODA LA PAGINA SEGUN ESTE EL HEADER
 function ocuparTodaPagina(){
-    var objetivo = document.querySelector('.pagina-contenedor');
-    var navegador = document.querySelector('.pagina-header');
+    let objetivo = document.querySelector('.pagina-contenedor');
+    let navegador = document.querySelector('.pagina-header');
     if (navegador.style.display === 'none'){
         objetivo.style.height = '100vh';
     }else{
-        // var espacio = navegador.style.offsetHeight;
-        var espacio = navegador.getBoundingClientRect().height;
+        // let espacio = navegador.style.offsetHeight;
+        let espacio = navegador.getBoundingClientRect().height;
         //console.log(espacio);
         objetivo.style.height = 'calc(100vh - ' + espacio + 'px )';
     }
@@ -117,9 +117,9 @@ function ocuparTodaPagina(){
 
 // RECARGA EL CSS DE LA PAGINA
 function recargarEstilos() {
-    var linksCSS = document.querySelectorAll('link[rel="stylesheet"]');
+    let linksCSS = document.querySelectorAll('link[rel="stylesheet"]');
     linksCSS.forEach(function(link) {
-        var href = link.href;
+        let href = link.href;
         link.href = '';
         link.href = href;
     });
